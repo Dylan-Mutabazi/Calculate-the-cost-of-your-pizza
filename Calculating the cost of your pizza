@@ -1,0 +1,12 @@
+print("lets calculate the cost of your pizza")
+inches = float(input("how many inches do you want your pizza to be? "))
+pizza = float(input("how many pizzas do you want? "))
+labour_cost = 0.75
+HST = 0.13
+materials = 0.5
+rent = 1.00
+subtotal = (labour_cost + rent + (materials * inches))
+subtotal = subtotal * pizza
+tax = subtotal * HST
+total = subtotal + tax
+print("your total is: ", total)
